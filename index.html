@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>관리자 질문 답변 시스템</title>
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="admin.js"></script>
+</head>
+<body>
+<h1>관리자 질문 답변 시스템</h1>
+<p id="loadingMessage">질문을 불러오는 중...</p>
+<div id="questionContainer" style="display: none;">
+  <p><strong>질문:</strong> <span id="questionText"></span></p>
+  <p><strong>사용자:</strong> <span id="userId"></span></p>
+  <p><strong>답변:</strong> <span id="answer"></span></p>
+  <textarea id="answerInput" placeholder="답변을 입력하세요..."></textarea>
+  <button id="submitAnswer">답변 저장</button>
+</div>
+</body>
+</html>
